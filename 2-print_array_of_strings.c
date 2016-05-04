@@ -1,12 +1,14 @@
-/*a function that prints the content of an array of strings*/
 #include<stddef.h>
 #include<unistd.h>
 
+/* a fucntion to write a character to display*/
 int print_char(char c)
 {
   return (write(1,&c,1));
 }
 
+
+/* a fucntion to print a string */
 void print_string(char *s)
 {
   int i;
@@ -20,14 +22,13 @@ void print_string(char *s)
     }
 }
   
-
+/* a function to print array of strings*/
 
 void print_array_of_strings(char **a)
 {
   int i;
   
   i = 0;
-
   while(a[i]!= NULL)    
     {
       print_string(a[i]);      

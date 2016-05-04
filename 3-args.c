@@ -1,5 +1,8 @@
 #include<unistd.h>
 
+/*
+  a fucntion to write a character to display
+*/  
 int print_char( char c)
 {
   return write(1,&c,1);
